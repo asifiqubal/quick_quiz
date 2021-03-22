@@ -10,8 +10,31 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: MyAppBar(),
-        body: Text('Hello, This is my first app'),
+        body: MyAppBody(),
       ),
+    );
+  }
+}
+
+class MyAppBody extends StatefulWidget{
+  @override
+  State<StatefulWidget> createState() {
+    return MyAppBodyState();
+  }
+}
+
+class MyAppBodyState extends State<MyAppBody>{
+  var state = [
+    "sdhfksh",'shdfkjhskjdfh'
+  ];
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+        children: [
+          Text("hshkjfhskh"),
+          Text("hshkjfhskh"),
+          Text("hshkjfhskh"),
+        ]
     );
   }
 }
